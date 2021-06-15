@@ -1,0 +1,11 @@
+<!--pages/notice/notice.wxml-->
+<view class="notice">
+  <navigator class="notice_content"  wx:for="{{noticeList}}" wx:key="nid" 
+  url="/pages/noticeDetail/noticeDetail?nid={{item.nid}}">
+    <view class="notice_content_point">
+      <image src="../../images/point.png" class="point" mode="widthFix"></image>
+      <text class="notice_header">{{item.header}}</text>
+    </view>
+    <text class="notice_time">{{item.ntime}}</text>
+  </navigator>
+</view>

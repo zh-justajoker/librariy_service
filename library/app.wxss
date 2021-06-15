@@ -1,0 +1,6 @@
+/**app.wxss**/
+@import "style/iconfont/iconfont.wxss";
+
+image{
+  width: 100%;
+}

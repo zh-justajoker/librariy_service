@@ -1,0 +1,18 @@
+<!--pages/search/search.wxml-->
+<view class="search_row">
+  <input placeholder="请输入ISBN或书名" bindinput="handleInput" value="{{inputValue}}"></input>
+  <button style=" width:110rpx;  padding: 0; margin-left: 10rpx;" hidden="{{!isFocus}}"
+    bindtap="handleCancle">取消</button>
+</view>
+<view class="msg">{{msg}}</view>
+<view class="search_content">
+  <navigator class="search_item" wx:for="{{books}}" wx:key="btxm" url="/pages/bookDetail/bookDetail?btxm={{item.btxm}}">
+    <image wx:if="{{item.bookImg!=null}}" src="{{baseServer+item.bookImg}}" mode="widthFix"></image>
+    <image wx:else src="../../images/book01.jpg" mode="widthFix"></image>
+    <view class="search_text">
+      <text class="item_bname">《{{item.bname}}》</text>
+      <text class="item_author">作者：{{item.author}}</text>
+      <text class="item_intro">简介：{{item.bookintro}}</text>
+    </view>
+  </navigator>
+</view>

@@ -1,0 +1,18 @@
+<!--pages/myBorrow/myBorrow.wxml-->
+<view class="myborrow">
+  <view class="borrow_header">您目前一共借出
+    <text class="borrow_count">{{borrows.length}}</text> 本书</view>
+  <view class="borrow_content">
+    <view class="borrow_content_header">借书列表如下:</view>
+    <navigator class="borrow_content_item" wx:for="{{borrows}}" wx:key="btxm"
+      url="/pages/bookDetail/bookDetail?btxm={{item.btxm}}">
+      <image wx:if="{{item.bookImg!=null}}" src="{{baseServer+item.bookImg}}" mode="widthFix"></image>
+          <image wx:else src="../../images/book01.jpg" mode="widthFix"></image>
+      <view class="borrow_content_text">
+        <text class="item_bname">《{{item.bname}}》</text>
+        <text class="item_author">作者：{{item.author}}</text>
+        <text class="item_time">借出时间：{{item.btime}}</text>
+      </view>
+    </navigator>
+  </view>
+</view>

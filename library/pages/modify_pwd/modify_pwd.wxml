@@ -1,0 +1,37 @@
+<!--pages/modify_pwd/modify_pwd.wxml-->
+<view class='container'>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class='top'>
+      <view class='one_list'>
+        <view class='change'>
+          <view class=''>旧密码：</view>
+          <view>
+            <input placeholder="请输入旧密码" password="true" 
+            type="password" name="oldPwd" value="{{oldPwd}}" ></input>
+          </view>
+        </view>
+      </view>
+      <view class='line'></view>
+      <view class='one_list'>
+        <view class='change'>
+          <view class=''>新密码：</view>
+          <view>
+            <input placeholder="请输入新密码"password="true" 
+            type="password" name="newPwd" value="{{newPwd}}" ></input>
+          </view>
+        </view>
+      </view>
+      <view class='line'></view>
+      <view class='one_list'>
+        <view class='change'>
+          <view class=''>确认密码：</view>
+          <view>
+            <input placeholder="请再次输入新密码"password="true" 
+            type="password" name="confNewPwd" value="{{confNewPwd}}" ></input>
+          </view>
+        </view>
+      </view>
+    </view>
+      <button class='btn' form-type='submit'>确定</button> 
+  </form>
+</view>

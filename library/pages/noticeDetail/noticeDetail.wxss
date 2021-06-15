@@ -1,0 +1,32 @@
+/* pages/noticeDetail/noticeDetail.wxss */
+page{
+  box-sizing:border-box;
+  padding: 20rpx 30rpx;
+}
+.noticeDetail_header{
+  color: #0ea34c;
+  width: 100%;
+  font-size: 36rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+}
+.noticeDetail_top{
+  color: #969696;
+  width: 100%;
+  display: flex;
+  height: 60rpx;
+  font-size: 24rpx;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.noticeDetail_content{
+  color: #000000;
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  text-align: justify;
+  line-height: 180%;
+  text-indent: 2rem;
+}

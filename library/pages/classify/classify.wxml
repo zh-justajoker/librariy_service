@@ -1,0 +1,29 @@
+<View class="allbooks">
+  <SearchInput></SearchInput>
+  <view class="allbooks_container">
+    <scroll-view scroll-y class="left_menu">
+      <view 
+       class="menu_item {{index===curIndex?'active':''}}"
+       wx:for="{{bookClassify}}" 
+       wx:key="*this"
+       bindtap="handleItemTap"
+       data-index="{{index}}"
+      >{{item.className}}</view>
+    </scroll-view>
+    <scroll-view scroll-top="{{scrollTop}}" scroll-y class="right_content">
+      <view class="content_item">
+        <navigator 
+         wx:for="{{books}}"
+         wx:for-index="index" 
+         wx:key="btxm"
+         url="/pages/bookDetail/bookDetail?btxm={{item.btxm}}">
+         <image wx:if="{{item.bookImg!=null}}" class='content_img' src="{{baseServer+item.bookImg}}" mode="heightFix"></image>
+          <image wx:else class='content_img' src="../../images/book01.jpg" mode="heightFix"></image>
+         
+        <view class="content_text">{{item.bname}}</view>
+        </navigator>
+      </view>
+    </scroll-view>
+</view>
+</View>
+

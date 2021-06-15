@@ -1,0 +1,27 @@
+<!--pages/feedback/feedHis/feedHis.wxml-->
+<Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+  <block wx:if="{{tabs[0].isActive}}">
+    <view class="feedhis">
+      <navigator class="feedhis_content" wx:for="{{feedHis0}}" wx:key="fid"
+        url="/pages/feedback/feedDetail/feedDetail?fid={{item.fid}}">
+        <view class="feedhis_content_point">
+          <image src="../../../images/point_red.png" class="point" mode="widthFix"></image>
+          <text class="feedhis_header">{{item.content}}</text>
+        </view>
+        <text class="feedhis_time">{{item.ftime}}</text>
+      </navigator>
+    </view>
+  </block>
+  <block wx:elif="{{tabs[1].isActive}}">
+    <view class="feedhis">
+      <navigator class="feedhis_content" wx:for="{{feedHis1}}" wx:key="fid"
+      url="/pages/feedback/feedDetail/feedDetail?fid={{item.fid}}">
+        <view class="feedhis_content_point">
+          <image src="../../../images/point.png" class="point" mode="widthFix"></image>
+          <text class="feedhis_header">{{item.content}}</text>
+        </view>
+        <text class="feedhis_time">{{item.ftime}}</text>
+      </navigator>
+    </view>
+  </block>
+</Tabs>

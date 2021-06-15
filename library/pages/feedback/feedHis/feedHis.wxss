@@ -1,0 +1,39 @@
+/* pages/feedback/feedHis/feedHis.wxss */
+page{
+  background-color: #dedede;
+  box-sizing:border-box;
+}
+.feedhis_content_point{
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+}
+.feedhis_content{
+  flex-direction: row;
+  display: flex;
+  background-color: #fff;
+  height: 100rpx;
+  margin-bottom: 10rpx;
+  justify-content: space-between;
+  padding: 0 20rpx;
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+.point{
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+}
+.feedhis_header{
+  color: #969696;
+  font-size: 28rpx;
+  max-lines: 1;
+  width: 475rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.feedhis_time{
+  color: #969696;
+  font-size: 24rpx;
+}

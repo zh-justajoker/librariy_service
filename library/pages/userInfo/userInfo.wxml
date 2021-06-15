@@ -1,0 +1,29 @@
+<!--pages/userInfo/userInfo.wxml-->
+<view class="userInfo">
+	<view class="userInfo-item">
+		<text>学号：</text>
+		<text class="t1">{{uno}}</text>
+	</view>
+	<view class="userInfo-item">
+		<text>姓名：</text>
+		<text class="t2">{{uname}}</text>
+	</view>
+	<view class="userInfo-item">
+		<text>性别：</text>
+		<text class="t2">{{sex}}</text>
+	</view>
+	<view class="userInfo-item">
+		<text>年龄：</text>
+    <text class="t2">{{age}}</text>
+	</view>
+	<view class="userInfo-item">
+    <text>院系：</text>
+    <text class="t2">{{dname}}</text>
+	</view>
+	<navigator url="../modify_pwd/modify_pwd" open-type="navigate">
+        <view class=".pwd_list_item">
+           <text style="color:red">修改密码</text>
+           <text class="iconfont icon-youjiantou"></text>
+        </view>
+      </navigator>
+</view>

@@ -1,0 +1,22 @@
+<!--pages/feedback/feedDetail/feedDetail.wxml-->
+<view class="feedDetail">
+  <view class="feedDetail_time">{{feedInfo.ftime}}</view>
+  <view class="feedDetail_left">
+    <image src="../../../images/user.png" class="point" mode="widthFix"></image>
+    <view class="feedDetail_left_content">
+      <text>{{feedInfo.content}}</text>
+    </view>
+  </view>
+  <view wx:if="{{feedInfo.state == 0}}" class="feedDetail_noreply">
+    <view class="feedDetail_noreply_text">请耐心等待回复!</view>
+  </view>
+  <view wx:else class="right">
+    <view class="right_left"></view>
+    <view class="feedDetail_right">
+    <view class="feedDetail_right_content">
+      <text>{{feedInfo.reply}}</text>
+    </view>
+    <image src="../../../images/xiaohui.png" class="point" mode="widthFix"></image>
+  </view>
+  </view>
+</view>

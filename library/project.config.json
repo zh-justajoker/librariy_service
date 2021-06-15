@@ -1,0 +1,150 @@
+{
+  "description": "项目配置文件",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": false,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "bundle": false,
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.15.0",
+  "appid": "wx4f7d60a87701be40",
+  "projectname": "library",
+  "debugOptions": {
+    "hidedInDevtools": []
+  },
+  "scripts": {},
+  "isGameTourist": false,
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/owner/owner",
+          "pathName": "pages/owner/owner",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/classify/classify",
+          "pathName": "pages/classify/classify",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "搜索页面",
+          "pathName": "pages/search/search",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "书籍详情",
+          "pathName": "pages/bookDetail/bookDetail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "推荐",
+          "pathName": "pages/recommend/recommend",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/myBorrow/myBorrow",
+          "pathName": "pages/myBorrow/myBorrow",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "借阅历史",
+          "pathName": "pages/borrow_his/borrow_his",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "修改密码",
+          "pathName": "pages/modify_pwd/modify_pwd",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "公告页面",
+          "pathName": "pages/notice/notice",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "公告详情",
+          "pathName": "pages/noticeDetail/noticeDetail",
+          "query": "nid = 1",
+          "scene": null
+        },
+        {
+          "name": "我要反馈",
+          "pathName": "pages/feedback/myFeed/myFeed",
+          "query": "nid = 1",
+          "scene": null
+        },
+        {
+          "name": "反馈历史",
+          "pathName": "pages/feedback/feedHis/feedHis",
+          "query": "nid = 1",
+          "scene": null
+        },
+        {
+          "name": "反馈详情",
+          "pathName": "pages/feedback/feedDetail/feedDetail",
+          "query": "nid = 1",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

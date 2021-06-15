@@ -1,0 +1,60 @@
+{
+  "pages":[
+    "pages/userlogin/userlogin",
+    "pages/index/index",
+    "pages/classify/classify",
+    "pages/recommend/recommend",
+    "pages/owner/owner",
+    "pages/search/search",
+    "pages/userInfo/userInfo",
+    "pages/bookDetail/bookDetail",
+    "pages/myBorrow/myBorrow",
+    "pages/borrow_his/borrow_his",
+    "pages/modify_pwd/modify_pwd",
+    "pages/notice/notice",
+    "pages/noticeDetail/noticeDetail",
+    "pages/feedback/myFeed/myFeed",
+    "pages/feedback/feedHis/feedHis",
+    "pages/feedback/feedDetail/feedDetail",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00D8C9",
+    "navigationBarTitleText": "许院图书馆",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#2c2c2c",
+    "selectedColor": "#00D8C9",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "./images/首页.png",
+        "selectedIconPath": "./images/首页_selected.png"
+      },
+      {
+        "text": "分类",
+        "pagePath": "pages/classify/classify",
+        "iconPath": "./images/分类.png",
+        "selectedIconPath": "./images/分类_selected.png"
+      },
+      {
+        "text": "推荐",
+        "pagePath":"pages/recommend/recommend",
+        "iconPath": "./images/推荐.png",
+        "selectedIconPath": "./images/推荐_selected.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/owner/owner",
+        "iconPath": "./images/我的.png",
+        "selectedIconPath": "./images/我的_selected.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

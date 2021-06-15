@@ -1,0 +1,74 @@
+<!--pages/recommend/recommend.wxml-->
+<view class="my_recommend">
+  <SearchInput></SearchInput>
+  <view class='header1'>
+    <view class='header'>
+      <view class='header_con flex_between'>
+        <view class='left'>
+          共计{{myReco.length}}本推荐
+        </view>
+        <view class='right flex_end'>
+          <view wx:if="{{!management_book}}" class='flex_center' bindtap='management'>
+            管理
+          </view>
+          <view wx:if="{{management_book}}" class='flex_center' bindtap='finish_management'>
+            完成
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="myreco_content">
+      <view class="myreco_content_item" bindtap='select' wx:for="{{myReco}}" wx:key="index" wx:for-item="i"
+        data-id="{{index}}">
+        <view wx:if="{{management_book}}" class='lefts'>
+          <block wx-if="{{!i.checked}}">
+            <image src="../../images/icon_move_unselect.png" mode="widthFix"></image>
+          </block>
+          <block wx-if="{{i.checked}}">
+            <image src="../../images/icon_move.png" mode="widthFix"></image>
+          </block>
+        </view>
+        <image wx:if="{{i.recoBooks.bookImg!=null}}" src="http://localhost:8080{{i.recoBooks.bookImg}}" mode="widthFix"></image>
+        <image wx:else src="../../images/book01.jpg" mode="widthFix"></image>
+        <view class="myreco_content_text">
+          <text class="item_bname">《{{i.recoBooks.bname}}》</text>
+          <text class="item_author">作者：{{i.recoBooks.author}}</text>
+          <text class="item_time">ISBN：{{i.recoBooks.isbn}}</text>
+        </view>
+      </view>
+
+      <view class='little_box' wx:if="{{management_book}}"></view>
+    </view>
+
+    <view class='bottom flex_between' wx:if="{{management_book}}">
+      <view class='left flex_start'>
+        <block wx:if="{{select_all}}">
+          <view bindtap='select_none' class='flex_start'>
+            <image src="../../images/icon_move.png" mode="widthFix" class="checkeImg"></image>
+            <view>
+              取消全选
+            </view>
+          </view>
+        </block>
+        <block wx:if="{{!select_all}}">
+          <view bindtap='select_all' class='flex_start'>
+            <image src="../../images/icon_move_unselect.png" mode="widthFix" class="checkeImg"></image>
+            <view>
+              全选
+            </view>
+          </view>
+        </block>
+      </view>
+      <view class='right flex_end'>
+        <view style='text-align:right'>
+          <view class='all'>
+            共选中{{middlearr.length}}条记录
+          </view>
+        </view>
+        <view bindtap='deleteitem' class='sure'>
+          删除
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

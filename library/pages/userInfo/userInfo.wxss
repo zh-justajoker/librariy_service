@@ -1,0 +1,33 @@
+/* pages/userInfo/userInfo.wxss */
+.userInfo{
+  margin-top: 30rpx;
+}
+.userInfo-item{
+  margin: 20rpx;
+  border-bottom: 1px #b4b5b6 dashed;
+  padding: 20rpx;
+  display: flex;
+  align-items: center;
+}
+.userInfo-item image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.pwd_list_item{
+  margin: 20rpx;
+  border-bottom: 1px #b4b5b6 dashed;
+  padding: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.t1{
+  font-size: 28rpx;
+  color: red;
+}
+.t2{
+  font-size: 28rpx;
+  color: black;
+}
+

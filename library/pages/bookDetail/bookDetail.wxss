@@ -1,0 +1,110 @@
+/* pages/bookDetail/bookDetail.wxss */
+.detail{
+  height: 100%;
+}
+.detail_top{
+  background-color: white;
+  width: 100%;
+  box-sizing:border-box;
+  flex-direction: row;
+  display: flex;
+  padding: 40rpx;
+  border-bottom: 4rpx solid #dedede;
+
+}
+.detail_top image{
+  width: 180rpx;
+  height: 100%;
+}
+.detail_top_text{
+  width: 400rpx;
+  padding: 10rpx;
+  display: flex;
+  margin-left: 10rpx;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.detail_top_recommend{
+  margin-top: 20rpx;
+  width: 20%;
+  flex-direction: row;
+  justify-content: space-between;
+  display: flex;
+}
+.detail_top_recommend image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.detail_top_recommend_text{
+  font-size: 30rpx;
+  color: #969696;
+}
+.detail_top_recommend1{
+  margin-top: 20rpx;
+  width: 23%;
+  flex-direction: row;
+  justify-content: space-between;
+  display: flex;
+}
+.detail_top_recommend1 image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.detail_top_recommend1_text{
+  font-size: 30rpx;
+  color: #00D8C9;
+}
+
+.item_bname{
+  font-size: 30rpx;
+  color:black;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.item_author{
+  font-size: 26rpx;
+  color:	#C0C0C0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.item_classname{
+  font-size: 24rpx;
+  color:	#C0C0C0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.item_btxm{
+  font-size: 22rpx;
+  color:	#C0C0C0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.item_isbn{
+  font-size: 26rpx;
+  color:	black;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.detail_intro_box{
+  height: 300rpx;
+}
+.detail_intro{
+  padding: 26rpx;
+  border-bottom: 3rpx solid #dedede;
+}
+.detail_intro_header{
+  font-size: 28rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+.detail_intro_content{
+  font-size: 25rpx;
+  color: black;
+  line-height:2em;
+  text-indent:2em;
+}

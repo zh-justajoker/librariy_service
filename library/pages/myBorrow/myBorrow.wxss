@@ -1,0 +1,58 @@
+/* pages/myBorrow/myBorrow.wxss */
+.myborrow{
+  height: 100%;
+  padding: 20rpx;
+  box-sizing:border-box;
+}
+.borrow_header{
+  font-size: 28rpx;
+  font-weight: bold;
+  padding-bottom: 20rpx;
+  border-bottom: 0.5rpx #A0A0A0 solid ;
+}
+.borrow_count{
+  font-size: 30rpx;
+  color: red;
+  font-weight: bold;
+}
+.borrow_content{
+  margin-top: 20rpx;
+}
+.borrow_content_header{
+  font-size: 30rpx;
+  font-weight: bold;
+  margin-bottom: 26rpx;
+}
+.borrow_content_item{
+  background-color: white;
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  border-bottom: 0.5rpx #A0A0A0 solid;
+  padding-bottom: 10rpx;
+  margin-bottom: 10rpx;
+}
+.borrow_content_item image{
+  width: 120rpx;
+  height: 100%;
+}
+.borrow_content_text{
+  width: calc(100% - 140rpx);
+  padding: 10rpx;
+  display: flex;
+  margin-left: 10rpx;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.item_bname{
+  font-size: 26rpx;
+  color:#00008B;
+}
+.item_author{
+  font-size: 24rpx;
+  color:	#40E0D0;
+}
+.item_time{
+  font-size: 22rpx;
+  color:	#40E0D0;
+}

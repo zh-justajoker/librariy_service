@@ -1,0 +1,42 @@
+<!--pages/owner/owner.wxml-->
+<view class="owner">
+   <view class="owner_info">
+    <image src="../../images/user.png"></image>
+    <text>欢迎您：{{userInfo.uname}}</text>
+   </view>
+
+   <view class="owner_list">
+      <navigator url="../userInfo/userInfo" open-type="navigate">
+        <view class="owner_list_item">
+           <text>个人信息</text>
+           <text class="iconfont icon-youjiantou"></text>
+        </view>
+      </navigator>
+      <navigator url="../myBorrow/myBorrow" open-type="navigate">
+        <view class="owner_list_item">
+           <text>我的借阅</text>
+           <text class="iconfont icon-youjiantou"></text>
+        </view>
+      </navigator>
+      <navigator url="../borrow_his/borrow_his" open-type="navigate">
+        <view class="owner_list_item">
+           <text>借阅历史</text>
+           <text class="iconfont icon-youjiantou"></text>
+        </view>
+      </navigator>
+      <navigator url="../feedback/myFeed/myFeed" open-type="navigate">
+        <view class="owner_list_item">
+           <text>我要反馈</text>
+           <text class="iconfont icon-youjiantou"></text>
+        </view>
+      </navigator>
+      <navigator url="../feedback/feedHis/feedHis" open-type="navigate">
+        <view class="owner_list_item">
+           <text>反馈记录</text>
+           <text class="iconfont icon-youjiantou"></text>
+        </view>
+      </navigator>
+
+      <button class="b1" type="warn" bindtap="logOut">退出登录</button>
+   </view>
+</view>

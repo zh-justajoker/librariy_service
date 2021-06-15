@@ -1,0 +1,10 @@
+<!--pages/noticeDetail/noticeDetail.wxml-->
+<view class="noticeDetail">
+  <view class="noticeDetail_header">{{noticeInfo.header}}</view>
+  <view class="noticeDetail_top">
+    <text>{{noticeInfo.ntime}}</text>
+    <text>作者：图书馆管理员</text>
+    <text>(访问次数：{{noticeInfo.ncount}})</text>
+  </view>
+  <view class="noticeDetail_content">{{noticeInfo.content}}</view>
+</view>

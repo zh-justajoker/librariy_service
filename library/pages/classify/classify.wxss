@@ -1,0 +1,49 @@
+page{
+  height: 100%;
+}
+.allbooks{
+  height: 100%;
+}
+.allbooks_container{
+  height: calc(100vh - 80rpx);
+  display: flex;
+}
+.left_menu{
+  flex: 2;
+  background-color: #dedede;
+}
+.left_menu .menu_item{
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26rpx;
+}
+.left_menu .active{
+  color:red;
+  background-color: white;
+  border-left: 5rpx solid red;
+}
+.right_content{
+  flex: 5;
+  padding: 20rpx;
+}
+.right_content .content_item{
+  display: flex;
+  flex-wrap: wrap;
+}
+.content_item navigator{
+  margin-bottom: 20rpx;
+  width: 33.3%;
+  text-align: center;
+}
+ .content_img{
+  width: 50%;
+  height: 100rpx;
+} 
+.content_text{
+  font-size: 24rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

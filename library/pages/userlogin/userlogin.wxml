@@ -1,0 +1,21 @@
+<!-- 登录页面 -->
+<view class='login'>
+    <image src='../../images/login.jpg' class='login-bg'></image>
+    <view class='login-wrap'>
+      <image src='../../images/xiaohui.png' class='xiaohui'></image>
+        <form bindsubmit="formSubmit" bindreset="formReset">
+            <view class='title'>读者服务小程序登录</view>
+            <view class='inp'>
+                <input type="text" name="uno" value="{{uno}}" placeholder="请输入账号" />
+            </view>
+            <view class='inp'>
+                <input class="inputText" type="password" name="upwd" value="{{upwd}}" password="true" placeholder="请输入密码" />
+            </view>
+            <view class='login-btn'>
+                <button class="btn1" type="primary" size="mini" form-type='submit'>
+                    登录
+                </button>
+            </view>
+        </form>
+    </view>
+</view>

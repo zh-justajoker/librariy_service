@@ -1,0 +1,35 @@
+<!--pages/bookDetail/bookDetail.wxml-->
+<view class="detail">
+  <view class="detail_top">
+    <image wx:if="{{bookInfo.bookImg!=null}}" src="{{baseServer+bookInfo.bookImg}}" mode="widthFix"></image>
+    <image wx:else src="../../images/book01.jpg" mode="widthFix"></image>
+    <view class="detail_top_text">
+      <text class="item_bname">{{bookInfo.bname}}</text>
+      <text class="item_author">作者：{{bookInfo.author}}</text>
+      <text class="item_classname">分类：{{bookInfo.className}}</text>
+      <text class="item_btxm">条形码：{{bookInfo.btxm}}</text>
+      <text class="item_isbn">ISBN：{{bookInfo.isbn}}</text>
+    </view>
+    <view wx:if="{{isNeedReco}}" class="detail_top_recommend" 
+    bindtap="handleRecommend">
+      <image src="../../images/icon_room_info_follow_un.png" mode="widthFix"></image>
+      <text class="detail_top_recommend_text">推荐</text>
+    </view>
+    <view wx:else class="detail_top_recommend1" bindtap="handleUnRecommend">
+      <image src="../../images/icon_room_info_follow.png" mode="widthFix"></image>
+      <text class="detail_top_recommend1_text">已推荐</text>
+    </view>
+  </view>
+  <view class="detail_intro">
+    <view class="detail_intro_header">书本简介</view>
+    <scroll-view scroll-y="true" class="detail_intro_box">
+      <view class="detail_intro_content">{{bookInfo.bookintro}}</view>
+    </scroll-view>
+  </view>
+  <view class="detail_intro">
+    <view class="detail_intro_header">可借状态</view>
+    <button  wx:if="{{bookInfo.state == 0}}" type="primary" bindtap="handChangeState">预约借书</button>
+    <button  wx:if="{{bookInfo.state == 2}}" disabled="true">已被预约</button>
+    <button  wx:if="{{bookInfo.state == 1}}" disabled="true">已被借出</button>
+  </view>
+</view>
